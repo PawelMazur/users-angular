@@ -1,0 +1,43 @@
+// .user-detail{
+//     height: 200px;
+//     width: 200px;
+//     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+//     padding: 10px;
+//     border-radius: 0.3em;
+//     margin: 10px;
+// }
+
+.user-detail{
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    // width: 150px;
+    // height: 350px;
+    margin: 10px;
+    text-align: center;
+    border-radius: 0.2em;
+}
+
+.user_type{
+    color:  #222222;
+    font-size: 20px;
+}
+
+h2{
+    display: flex;
+    justify-content: center;
+}
+
+.user_repos_url{
+    width: 150px;
+    word-wrap: break-word;
+}
+
+button{
+    display: inline-block;
+    color: #ffffff;
+    background: #000000;
+    font-size: 20px;
+    cursor: pointer;
+    padding: 8px;
+    text-align: center;
+    width: 100%;
+}

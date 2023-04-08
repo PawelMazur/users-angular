@@ -1,0 +1,9 @@
+<ul class="list-users">
+  <li *ngFor="let user of users$ | async">
+    <app-user-detail class="user-datail" [user]="user"></app-user-detail>
+  </li>
+</ul>
+<!-- <p> {{ user1.login }}</p> -->
+<p>
+  view-users-page works!
+</p>
