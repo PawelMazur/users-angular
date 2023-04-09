@@ -8,7 +8,8 @@ import { HttpClient } from '@angular/common/http';
 })
 export class UserService {
 
-  private PATH_URL = "https://api.github1.com/";
+  // private PATH_URL = "https://api.github1.com/";
+  private PATH_URL = "http://localhost:4000/";
 
   constructor(private http: HttpClient) {
 
