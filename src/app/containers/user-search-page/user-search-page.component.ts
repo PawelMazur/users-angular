@@ -1,4 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { User } from '../../models/user';
+import { UserService } from '../../service/user.service';
+import { Observable } from 'rxjs';
 
 @Component({
   selector: 'app-user-search-page',
@@ -7,9 +10,16 @@ import { Component, OnInit } from '@angular/core';
 })
 export class UserSearchPageComponent implements OnInit {
 
-  constructor() { }
+  user$: Observable<User>;
+  userLogin: String;
+
+  constructor(private serviceUsers: UserService) { }
 
   ngOnInit() {
+  
   }
 
+  searchUsers(userLogin: String){
+    this.user$ = this.serviceUsers.getSearchUsers(userLogin);    
+  }
 }

@@ -20,6 +20,8 @@ export class AppComponent implements OnInit{
   ngOnInit(): void {
     this.appTitle.setTitle(this.title);
   }
+
+  value = 'Clear me';
   
   openMenu(event: any){
     this.appSidenav.open();

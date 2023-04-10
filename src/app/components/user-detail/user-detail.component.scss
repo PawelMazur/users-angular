@@ -2,10 +2,14 @@
 .user-detail{
     box-shadow: rgba(0, 0, 0, 0.24) 10px 10px 8px;
     width: 160px;
-    height: 340px;
+    height: 350px;
     margin: 10px;
     text-align: center;
     border-radius: 0.2em;
+}
+
+.user-detail:hover{
+    box-shadow: rgba(0, 0, 0, 0.5) 10px 10px 10px;
 }
 
 .user_avatar{
@@ -16,13 +20,14 @@ h2{
     display: flex;
     justify-content: center;
     font-family: "Inter",sans-serif;
-    padding: 22px;
+    padding: 12px 12px 1px 12px;
 }
 
 .user_type{
     color:  #555555;
     font-weight: 700;
     font-size: 18px;
+    padding: 10px;
     font-family: "Inter",sans-serif;
 }
 
@@ -46,4 +51,8 @@ h2{
     color: #ffffff;
     text-decoration: none;
     font-family: "Inter",sans-serif;
+}
+
+.user-detail-icon{
+    color: black;
 }

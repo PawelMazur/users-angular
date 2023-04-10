@@ -4,4 +4,5 @@ export class User {
     avatar_url: String;
     type: String;
     repos_url: String;
+    html_url: String;
 }

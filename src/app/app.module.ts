@@ -10,6 +10,10 @@ import { ViewUsersPageComponent } from './containers/view-users-page/view-users-
 import { UserSearchPageComponent } from './containers/user-search-page/user-search-page.component';
 import { NotFoundPageComponent } from './containers/not-found-page/not-found-page.component';
 import { FormsModule } from '@angular/forms';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import {MatRadioModule} from '@angular/material/radio';
+import { MatIconModule } from '@angular/material/icon';
+import {MatInputModule} from '@angular/material/input';
 
 @NgModule({
   declarations: [
@@ -20,11 +24,15 @@ import { FormsModule } from '@angular/forms';
     NotFoundPageComponent,
   ],
   imports: [
+    MatRadioModule,
+    MatInputModule,
+    MatIconModule,
     BrowserModule,
     ComponentsModule,
     AppRoutingModule,
     HttpClientModule,
     FormsModule,
+    BrowserAnimationsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

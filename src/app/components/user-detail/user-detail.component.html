@@ -3,19 +3,16 @@
     <div class="user_avatar">
       <a href=""><img src={{user.avatar_url}} alt="" style="width:150px;height:200px;"></a>
     </div>
-    <div class="user-detail-icon">
-        <a href="#"><i class="fa fa-dribbble"></i></a>
-        <a href="#"><i class="fa fa-twitter"></i></a>
-        <a href="#"><i class="fa fa-linkedin"></i></a>
-        <a href="#"><i class="fa fa-facebook"></i></a>
-      </div>
     <h2> {{ user.login }}</h2>
       <p class="user_type"> {{ user.type }}</p>
-      <!-- <p class="user_repos_url"> {{ user.repos_url }}</p> -->
+      <mat-icon>home</mat-icon>
+      <mat-icon>facebook</mat-icon>
+      <mat-icon>linkedin</mat-icon>
+      <mat-icon>close</mat-icon>
   </div>
   
   <div class="user_button">
-    <a href={{user.repos_url}}>Repozytorium</a>
+    <a href={{user.html_url}}>Repozytorium</a>
   </div>
  
 </div>  
