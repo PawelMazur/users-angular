@@ -3,6 +3,7 @@ import { Observable } from 'rxjs';
 import { User } from '../models/user';
 import { HttpClient } from '@angular/common/http';
 
+
 @Injectable({
   providedIn: 'root'
 })
@@ -20,6 +21,7 @@ export class UserService {
   }
 
   getSearchUsers(userLogin: String): Observable<User>{
-    return this.http.get<User>(`${this.PATH_URL}/users/${userLogin}`);
+    return this.http.get<User>(`${this.PATH_URL}/users/${userLogin}`)
+    // .pipe(filter(text => text.login.length > 2), debounceTime(100));
   }
 }

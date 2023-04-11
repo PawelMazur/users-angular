@@ -1,4 +1,4 @@
-<div class="component-sidenav" id="sidenav">
+<div class="component-sidenav" @openClose *ngIf="isOpen">
     <div class="item-menu" >
         <a [routerLink]="['/search']" (click)="close()">Search User</a>
         <a [routerLink]="['/']" (click)="close()">Collection User</a>

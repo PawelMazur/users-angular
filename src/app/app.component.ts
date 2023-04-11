@@ -10,7 +10,8 @@ import { SidenavComponent } from './components/sidenav/sidenav.component';
 export class AppComponent implements OnInit{
   
   title = 'Repository';
-  
+  toggle = true;
+
   @ViewChild("appTitle",{read: ToolbarComponent})
   appTitle: ToolbarComponent;
 
@@ -21,9 +22,20 @@ export class AppComponent implements OnInit{
     this.appTitle.setTitle(this.title);
   }
 
-  value = 'Clear me';
-  
-  openMenu(event: any){
-    this.appSidenav.open();
+  toggleMenu(){
+    console.log("zzz");
+    this.appSidenav.toggle();
   }
+
+  
+  // toggleMenu() {this.toggle = !this.toggle};
+
+  // menu(event: any){
+  //   if (this.toggle){
+  //     this.appSidenav.open();
+  //   } else {
+  //     this.appSidenav.close();
+  //   }
+  // }
+
 }

@@ -1,8 +1,8 @@
 <div class="search-page">
   <mat-form-field class="form-field">
     <mat-label>Seach user</mat-label>
-    <input matInput type="text" [(ngModel)]="userLogin" (keyup)="searchUsers(userLogin)">
-    
+    <!-- <input #boxEl matInput type="text" [(ngModel)]="userLogin" (keyup)="searchUsers(userLogin)"> -->
+    <input #boxEl matInput type="text" [(ngModel)]="userLogin">
   </mat-form-field>
   <div class="container-detail">
     <app-user-detail class="user-datail" [user]="user$ | async"></app-user-detail>

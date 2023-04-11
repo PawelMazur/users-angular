@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { UserService } from '../../service/user.service';
 import { Observable } from 'rxjs';
 import { User } from '../../models/user';
+import * as debounceFn from 'lodash.debounce';
 
 @Component({
   selector: 'app-view-users-page',
@@ -11,24 +12,14 @@ import { User } from '../../models/user';
 export class ViewUsersPageComponent implements OnInit {
 
   users$: Observable<User[]>;
-  // users: User[];
-  // user1: User;
 
   constructor(private userService: UserService) { }
 
   ngOnInit() {
-    this.users$ =  this.userService.getUsers();
-    this.userService.getUsers().subscribe(
-      data => console.log(data)
-    )
+    // this.users$ =  this.userService.getUsers();
     // this.userService.getUsers().subscribe(
-    //   users => {console.log(users); this.users = this.users
-    //     this.user1 = this.users[0];
-    //     console.log(this.user1);
-      
-    //   }
-    // );
-
+    //   data => console.log(data)
+    // )
   }
   
 
