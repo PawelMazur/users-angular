@@ -43,7 +43,7 @@ export class UserSearchPageComponent implements OnInit{
 
   ngAfterViewInit() {
     fromEvent(this.boxEl.nativeElement, 'keyup')
-      .pipe(map(e => (e.target as HTMLInputElement).value),
+      .pipe(map(e => (e as HTMLInputElement).value),
       filter(text => text.length > 2),
       debounceTime(10),
       distinctUntilChanged(),
