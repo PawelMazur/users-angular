@@ -2,8 +2,8 @@
 <app-toolbar #appTitle (openMenu)="toggleMenu()"></app-toolbar>
 <app-sidenav #appSidenav>
     <div class="item-menu">
-        <a routerLink="/search" >Search User</a>
-        <a routerLink="/">Collection User</a>
+        <a routerLink="/search" (click)="appSidenav.close()">Search User</a>
+        <a routerLink="/" (click)="appSidenav.close()" >Collection User</a>
     </div>
 </app-sidenav>
 <router-outlet></router-outlet>
