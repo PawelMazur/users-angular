@@ -23,19 +23,6 @@ export class AppComponent implements OnInit{
   }
 
   toggleMenu(){
-    console.log("zzz");
     this.appSidenav.toggle();
   }
-
-  
-  // toggleMenu() {this.toggle = !this.toggle};
-
-  // menu(event: any){
-  //   if (this.toggle){
-  //     this.appSidenav.open();
-  //   } else {
-  //     this.appSidenav.close();
-  //   }
-  // }
-
 }

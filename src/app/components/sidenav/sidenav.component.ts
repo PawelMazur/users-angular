@@ -12,7 +12,7 @@ import { trigger, state, style, transition, animate, group } from '@angular/anim
           animate('0.3s ease', style({
             transform: 'translateX(0)',
           })),
-          animate('0.3s ease', style({
+          animate('0.3s 0.2s ease', style({
             opacity: 1
           }))
         ])
@@ -45,13 +45,5 @@ export class SidenavComponent implements OnInit {
   ngOnInit() {
       
   }
-
-  // close(){
-  //   document.getElementById("sidenav").style.width = "";
-  // }
-
-  // open(){
-  //   document.getElementById("sidenav").style.width = "300px";
-  // }
 
 }

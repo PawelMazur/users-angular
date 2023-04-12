@@ -1,4 +1,9 @@
 <!-- <app-toolbar #appTitle (openMenu)="menu($event); toggleMenu();"></app-toolbar> -->
 <app-toolbar #appTitle (openMenu)="toggleMenu()"></app-toolbar>
-<app-sidenav #appSidenav></app-sidenav>
+<app-sidenav #appSidenav>
+    <div class="item-menu">
+        <a routerLink="/search" >Search User</a>
+        <a routerLink="/">Collection User</a>
+    </div>
+</app-sidenav>
 <router-outlet></router-outlet>

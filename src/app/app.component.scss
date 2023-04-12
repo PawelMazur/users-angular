@@ -1,3 +1,29 @@
 .example-form-field {
     width: 200px;
-  }
+}
+
+.item-menu a:hover{
+  color: #ffffff;
+}
+
+.item-menu a:active{
+  color: #ffffff;
+}
+
+.item-menu {
+  display: flex;
+  flex-direction: column;
+}
+
+.item-menu a{
+  white-space: nowrap;
+  font-family: "Lato", sans-serif;
+  display: block;
+  padding-top: 10px;
+  padding-left: 30px;
+  top: 50px;
+  font-size: 36px;
+  text-decoration: none;
+  cursor: pointer;
+  color: #aaaaaa;
+}

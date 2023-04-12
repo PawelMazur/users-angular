@@ -3,7 +3,9 @@ import { User } from '../../models/user';
 import { UserService } from '../../service/user.service';
 import { Observable, Subject, fromEvent } from 'rxjs';
 // import { debounceTime, distinctUntilChanged, filter, map, switchMap } from 'rxjs/operators';
-// import { debounce } from 'lodash';
+import chunk from 'lodash/chunk';
+import { compact } from 'lodash';
+import differenceBy from 'lodash/differenceBy';
 import { debounceTime, switchMap, map, filter, distinctUntilChanged } from 'rxjs/operators';
 import debounce from '../../decorators/debounce.decorator';
 
@@ -17,7 +19,7 @@ export class UserSearchPageComponent implements OnInit{
   user$: Observable<User>;
   subject = new Subject();
   userLogin: String;
-
+  
   constructor(private serviceUsers: UserService) {
     // this.searchUsers = debounce(this.searchUsers, 1000)
    }
